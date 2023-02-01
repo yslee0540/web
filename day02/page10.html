@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(255, 240, 215);
+        }
+        li {
+            list-style: none;
+            float: left;
+            padding: 10px 15px;
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+        li:nth-child(2n) {
+            background: orange;
+        }
+        li:nth-child(2n+1) {
+            background: yellow;
+        }
+        li:first-child {
+            border-radius: 50px 0 0 50px;
+        }
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+        a:hover {
+            background: red;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+        #total {
+            width: 800px;
+            height: 800px;
+            background: lightcyan;
+            text-align: center;
+        }
+        #top {
+            width: 796px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+        }
+        #top2 {
+            background: black;
+            color: white;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            border: 20px inset red;
+            box-shadow: 5px 10px yellow;
+        }
+        #center {
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 740px;
+            height: 300px;
+            background: pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page20.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page10.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page30.html">게시판</a>
+                </li>
+                <li>
+                    <a href="page40.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            고정된 부분
+        </div>
+        <div id="center">
+            <table border="1">
+                <tr>
+                    <td width="100" bgcolor="yellow" style="padding: 5px 0;">제품이름</td>
+                    <td width="300" bgcolor="white">shoes</td>
+                </tr>
+                <tr>
+                    <td width="100" bgcolor="yellow" style="padding: 5px 0;">제품가격</td>
+                    <td width="300" bgcolor="white">20000</td>
+                </tr>
+                <tr>
+                    <td width="100" bgcolor="yellow" style="padding: 5px 0;">제조회사</td>
+                    <td width="300" bgcolor="white">OOO</td>
+                </tr>
+                <tr>
+                    <td bgcolor="yellow">제품이미지</td>
+                    <td bgcolor="white">
+                        <img src="6.jpg" alt="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $= jpg] {
+            border: 10px solid red;
+        }
+        img[src $= png] {
+            border: 5px dotted lime;
+        }
+        #d1 > p {
+            background: gold;
+        }
+        #d2  p {
+            background: silver;
+        }
+        #d1 {
+            width:200px;
+            height: 100px;
+            background: yellow;
+        }
+        #d2 {
+            width:200px;
+            height: 150px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jpg" alt="사람"> <br>
+    <img src="001.png" alt="이야기하는 아이들"> <br>
+    <hr>
+    <div id="d1">
+        <p>좋아하는 음식</p>
+        <div id="d11">
+            <p>한식</p>
+            <p>분식</p>
+        </div>
+    </div>
+    <div id="d2">
+        <p>싫어하는 음식</p>
+        <div id="d22">
+            <p>홍차</p>
+            <p>중식</p>
+        </div>
+    </div>
+</body>
+</html>
