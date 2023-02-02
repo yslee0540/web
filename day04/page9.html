@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hi() {
+            alert("여러분 2시간이 지나면 끝나요!")
+        }
+        function bye() {
+            alert("드디어 끝났어요! 안녕히 가세요")
+        }
+        function check() {
+            id = "root"
+            pw = "1234"
+            id2 = document.getElementById("id2").value //root 접근연산자
+            pw2 = document.getElementById("pw2").value //1234
+            result = document.getElementById("result")
+            if (id2 == id && pw2 == pw) {
+                //alert("로그인 성공")
+                result.innerHTML =  "<font color=blue>로그인 성공!!!</font> <img src='ok.jpg' width=100 height=100>"
+            } else {
+                //alert("로그인 실패")
+                result.innerHTML = "<font color=red>로그인 실패</font> <img src='no.png' width=100 height=100>"
+            }
+        }
+        function check_id() {
+            id2 = document.getElementById("id2").value
+            alert("글자수: " + id2.length)
+            result2 = document.getElementById("result")
+            if (id2.length < 5) {
+                result2.innerHTML = "<font color=red>글자수 부족</font>"
+            } else {
+                result2.innerHTML = ""
+            }
+        }
+        function check_pw() {
+            pw2 = document.getElementById("pw2").value
+            pw3 = document.getElementById("pw3").value
+            result3 = document.getElementById("result")
+            if (pw2 == pw3) {
+                result3.innerHTML = "<font color=blue>패스워드 일치</font>"
+            } else {
+                result3.innerHTML = "<font color=red>패스워드 불일치</font>"
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="hi()">인사처리</button>
+    <button onclick="bye()">안녕처리</button>
+    <hr color="red">
+    아이디 : <input type="text" id="id2" value="root">
+    <button onclick="check_id()">글자수 체크</button><br>
+    <hr>
+    패스워드1 : <input type="text" id="pw2" value="1234"><br>
+    패스워드2 : <input type="text" id="pw3" value="1234">
+    <button onclick="check_pw()">패스워드 동일</button><br>
+    <hr>
+    <button onclick="check()">로그인처리</button><br>
+    <div id="result">
+        
+    </div>
+</body>
+</html>
