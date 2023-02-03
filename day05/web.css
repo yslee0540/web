@@ -1,0 +1,31 @@
+body {
+    /* align-items: center; */
+    text-align: center;
+    width: 700px;
+}
+td {
+    padding:5px;
+}
+button {
+    background: lightblue;
+    font-weight: bold;
+}
+button:hover {
+    background: rgb(36, 32, 139);
+    color: white
+}
+#d1 {
+    background: lightcyan;
+    padding: 5px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: white
+}
+#result {
+    padding-top: 20px;
+    line-height: 1.8;
+}

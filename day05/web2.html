@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+    <script>
+        function search() {
+            drama = document.getElementById('drama').value
+
+            let time = ""
+            let tv = ""
+            let image = ""
+            if (drama == "더글로리") {
+                time = "17:00"
+                tv = "넷플릭스"
+                image = '<img src="더글로리.jpg" width="200" style="padding-top:10px;">'
+            } else if (drama == "일타스캔들") {
+                time = "21:00"
+                tv = "tvN"
+                image = '<img src="일타스캔들.jpg" width="200" style="padding-top:10px;">'
+            } else {
+                
+            }
+
+            result_tag = document.getElementById("result")
+            text = '방영시간:  '+ time + '<br> 방송사: ' + tv
+                    + '<br>' + image
+            result_tag.innerHTML = text
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+        <h3>드라마 정보 사이트</h3>
+    </div><br>
+
+    드라마 이름: <input type="text" id="drama" value="더글로리">
+    <button onclick="search()">검색</button>
+    <div id="result">
+        
+    </div>
+</body>
+</html>

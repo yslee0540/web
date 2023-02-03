@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+    <script>
+        function go() {
+            drama = document.getElementById('drama').value
+            // tving = document.getElementById('tving')
+            // wavve = document.getElementById('wavve')
+            let image1 = ""
+            let image2 = ""
+            if (drama == "넷플릭스") {
+                image1 = '<img src="더글로리.jpg" width="200">'
+                image2 = '<img src="일타스캔들.jpg" width="200">'
+            } else if (drama == "티빙") {
+                image1 = '<img src="몸값.jpg" width="200">'
+                image2 = '<img src="윰세.jpg" width="200">'
+            } else {
+                
+            }
+
+            result_tag1 = document.getElementById("result1")
+            result_tag1.innerHTML = image1
+            result_tag2 = document.getElementById("result2")
+            result_tag2.innerHTML = image2
+        }
+    </script>
+
+<body>
+    <div id="d1">
+        <h3>드라마 정보 사이트</h3>
+    </div>
+    <br>
+    <div id="d2">
+        <table align="center">
+            <tr>
+                <td>드라마 정보</td>
+                <td>
+                    <button><a href="web2.html">이동</a></button>
+                </td>
+            </tr>
+            <tr>
+                <td>방송사별 드라마</td>
+                <td>
+                    <button>이동</button>
+                </td>
+            </tr>
+        </table>
+        <hr width="700" style="margin:20px 0">
+        주 이용 사이트<br>
+        <input type="text" id="drama" value="넷플릭스">
+        <button onclick="go()">이동</button>
+    </div>
+<br>
+    <table border="0" align="center">
+        <tr>
+            <td rowspan="2" id="result1">
+                
+            </td>
+            <td rowspan="2" id="result2">
+                
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
